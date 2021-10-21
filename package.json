@@ -1,16 +1,19 @@
 {
-  "name": "social-network-api",
+  "name": "challenge-18-social-network-api",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/axv50/social18"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,6 +22,12 @@
   "homepage": "https://github.com/axv50/social18",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.5"
+    "faker": "^5.5.3",
+    "mongoose": "^6.0.7",
+    "node": "^16.9.1",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
