@@ -44,6 +44,7 @@ const ThoughtSchema = new Schema(
         },
         reactions: [ReactionSchema]
     }
+    
 )
 
 const Thought = model('Thought', ThoughtSchema);
